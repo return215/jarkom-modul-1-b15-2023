@@ -104,16 +104,13 @@ Sangat mudah, filternya `ip.dst_host == 184.87.193.88`, ditemukan 6 packet.
 ![[Pasted image 20230918195317.png]]
 
 ## Soal 8 [VG]
+###Berikan kueri filter sehingga wireshark hanya mengambil semua protokol paket yang menuju port 80! (Jika terdapat lebih dari 1 port, maka urutkan sesuai dengan abjad)
 
-Gunakan `dstport` untuk port keluar.
+Gunakan `dstport` untuk port keluar. Karena diminta urut maka bisa dilakukan operasi or sehingga kueri filter menjadi seperti berikut.
 
 `tcp.dstport == 80 || udp.dstport == 80`
 
 Yang melakukan submit adalah [MH]
-
-![[Pasted image 20230918212111.png]]
-
-![[WhatsApp Image 2023-09-18 at 22.00.18.jpeg]]
 
 ## Soal 9 [MH]
 
