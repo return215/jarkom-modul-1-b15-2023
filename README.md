@@ -10,18 +10,18 @@ Filter yang digunakan pertama adalah `ftp.request.command == "STOR"` untuk perin
 
 <!-- TODO change wikilink format -->
 
-![[Pasted image 20230918194148.png]]
-![[Pasted image 20230918194952.png]]
+![](img/Pasted%20image%2020230918194148.png)
+![](img/Pasted%20image%2020230918194952.png)
 
 Diketahui nama filenya adalah `"c75-GrabThePhisher.zip"`, jadi dicari dengan filter
 `ftp.response.arg contains "c75-GrabThePhisher"` dan ditemukan pada frame 149.
 
-![[Pasted image 20230918194311.png]]
-![[Pasted image 20230918194913.png]]
+![](img/Pasted%20image%2020230918194311.png)
+![](img/Pasted%20image%2020230918194913.png)
 
 Dari sana dapat didapatkan flagnya.
 
-![[Pasted image 20230918194518.png]]
+![](img/Pasted%20image%2020230918194518.png)
 
 ## Soal 2 [VG]
 
@@ -40,9 +40,8 @@ Kalimat display filter yang digunakan:
 
 Untuk (a), banyak paket yang tampil dengan filter di atas terdapat 21. Ini didapat dari pojok kanan bawah tampilan Wireshark.
 
-![[Pasted image 20230918193211.png]]
-
-![[Screenshot_20230918_192010.png]]
+![](img/Pasted%20image%2020230918193211.png)
+![](img/Screenshot_20230918_192010.png)
 
 ## Soal 4 [VG]
 
@@ -51,16 +50,16 @@ Untuk (a), banyak paket yang tampil dengan filter di atas terdapat 21. Ini didap
 ## Soal 5 [MH]
 
 a. Banyak packet yang ditangkap adalah 60.
-   ![[Pasted image 20230918210803.png]]
+   ![](img/Pasted%20image%2020230918210803.png)
+
 b. Port SMTP adalah port 25.
+
 c. Hanya ada satu public IP, yaitu 74.53.140.153
 
 Ditemukan isi email yang bersi password pada frame 22:
 
 ```
 Hello
-
- 
 
 I send u a p45sword of a zip file, but you should decode it in Base64.
 
@@ -69,10 +68,10 @@ Here is the p45sword:
 NWltcGxlUGFzNXdvcmQ=
 ```
 
-![[Pasted image 20230918211046.png]]
-![[Pasted image 20230918211001.png]]
-![[Pasted image 20230918211112.png]]
-![[Pasted image 20230918210744.png]]
+![](img/Pasted%20image%2020230918211046.png)
+![](img/Pasted%20image%2020230918211001.png)
+![](img/Pasted%20image%2020230918211112.png)
+![](img/Pasted%20image%2020230918210744.png)
 
 ## Soal 6 [VG]
 
@@ -82,9 +81,8 @@ unsolved
 
 Sangat mudah, filternya `ip.dst_host == 184.87.193.88`, ditemukan 6 packet.
 
-![[Pasted image 20230918195305.png]]
-
-![[Pasted image 20230918195317.png]]
+![](img/Pasted%20image%2020230918195305.png)
+![](img/Pasted%20image%2020230918195317.png)
 
 ## Soal 8 [VG]
 
@@ -104,7 +102,7 @@ Tidak perlu melakukan filter pada file pcap. Hanya query-nya saja.
 
 `ip.src == 10.51.40.1 && ip.dst != 10.39.55.34`
 
-![[Pasted image 20230918202647.png]]
+![](img/Pasted%20image%2020230918202647.png)
 
 ## Soal 10 [VG]
 
