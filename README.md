@@ -52,12 +52,15 @@ Untuk (a), banyak paket yang tampil dengan filter di atas terdapat 21. Ini didap
 ### Berapa nilai checksum yang didapat dari header pada paket nomor 130?
 
 Nilai checksum bisa dilihat langsung jika mengklik paket nomor tersebut. Akan tetapi, mungkin saja terlihat seperti berikut.
+
 ![image](https://github.com/VictorGstn/jarkom-modul-1-b15-2023/assets/125529445/e51b504a-8e39-4814-8f0b-85464b2700d2)
 
 Agar checksum bisa divalidasi maka dapat diklik kanan, pilih protocol preferences, dan pilih validate checksum if possible.
+
 ![image](https://github.com/VictorGstn/jarkom-modul-1-b15-2023/assets/125529445/82c7424c-aa87-46e2-8dce-43219bd00124)
 
 Setelah itu akan terlihat nilai checksum yang benar.
+
 ![image](https://github.com/VictorGstn/jarkom-modul-1-b15-2023/assets/125529445/8169ce5b-902b-41ed-8945-e6ec3f4183ea)
 
 Didapatkan nilai checksum **0x3656**
@@ -141,4 +144,5 @@ Pertama gunakan ```telnet``` sebagai display filter lalu cek data paket sehingga
 ![WhatsApp Image 2023-09-18 at 21 55 31](https://github.com/VictorGstn/jarkom-modul-1-b15-2023/assets/125529445/c92c44a4-765d-4492-93d0-eb22fe178e53)
 
 Didapatkan Login: Dhafin dan Password: kesayangannyak0k0
+
 Data ini tersebar di paket nomor 236 - 262
