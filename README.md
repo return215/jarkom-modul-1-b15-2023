@@ -93,7 +93,22 @@ NWltcGxlUGFzNXdvcmQ=
 
 ## Soal 6 [VG]
 
-unsolved
+### Seorang anak bernama Udin Berteman dengan SlameT yang merupakan seorang penggemar film detektif. sebagai teman yang baik, Ia selalu mengajak slamet untuk bermain valoranT bersama. suatu malam, terjadi sebuah hal yang tak terdUga. ketika udin mereka membuka game tersebut, laptop udin menunjukkan sebuah field text dan Sebuah kode Invalid bertuliskan "server SOURCE ADDRESS 7812 is invalid". ketika ditelusuri di google, hasil pencarian hanya menampilkan a1 e5 u21. jiwa detektif slamet pun bergejolak. bantulah udin dan slamet untuk menemukan solusi kode error tersebut.
+
+Pada saat mengerjakan soal ini kami membuka semua hint yang ada. Menggunakan hint tersebut maka kami menggabungkan huruf kapital yang ada pada soal dan didapatkan SUBSTITUSI. Substitusi apa yang digunakan? soal memberikan klue melalui a1 e5 u21 yang berarti angka akan sesuai dengan urutan alphabet dan begitu juga sebaliknya. Namun kami hanya dapat mengerjakan soal hingga tahap ini.
+
+Selanjutnya kami berdiskusi lebih lanjut dan menemukan bahwa perlu dilakukan substitusi pada ip source address dari paket nomor 7812. 
+
+```104.18.14.101```
+
+![image](https://github.com/VictorGstn/jarkom-modul-1-b15-2023/assets/125529445/c850ea28-c864-4060-83b7-8431f52e3b63)
+
+Menggunakan hint bahwa jawabannya sepanjang 6 huruf maka dibagi IP tersebut ke 6 angka yang mungkin menjadi abjad.
+
+```10 4 18 14 10 1```
+
+Lalu dilakukan substitusi dan didapat **JDRNJA**
+
 
 ## Soal 7 [MH]
 
@@ -104,7 +119,7 @@ Sangat mudah, filternya `ip.dst_host == 184.87.193.88`, ditemukan 6 packet.
 ![[Pasted image 20230918195317.png]]
 
 ## Soal 8 [VG]
-###Berikan kueri filter sehingga wireshark hanya mengambil semua protokol paket yang menuju port 80! (Jika terdapat lebih dari 1 port, maka urutkan sesuai dengan abjad)
+### Berikan kueri filter sehingga wireshark hanya mengambil semua protokol paket yang menuju port 80! (Jika terdapat lebih dari 1 port, maka urutkan sesuai dengan abjad)
 
 Gunakan `dstport` untuk port keluar. Karena diminta urut maka bisa dilakukan operasi or sehingga kueri filter menjadi seperti berikut.
 
